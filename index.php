@@ -40,7 +40,7 @@
             <thead>
                 <tr>
                     <td>Name</td>
-                    <td>Image</td>
+                    <td>เวลาอัพโหลดไฟล์</td>
                     <td>Edit</td>
                     <td>Delete</td>
                 </tr>
@@ -55,7 +55,7 @@
                 ?>
                     <tr>
                         <td><?php echo $row['name']; ?></td>                        
-                        <td><img src="upload/<?php echo $row['image']; ?>" width="100px" height="100px" alt=""></td>                        
+                        <td><?php echo $row['upload_date']; ?></td>                        
                         <td><a href="edit.php?update_id=<?php echo $row['id']; ?>" class="btn btn-warning">Edit</a></td>                        
                         <td><a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>                        
                     </tr>
