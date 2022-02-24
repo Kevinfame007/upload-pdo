@@ -18,8 +18,8 @@ if (isset($_REQUEST['btn_insert'])) {
         } else if (empty($image_file)) {
             $errorMsg = "please Select Image";
         } else if (
-            $type == "image/jpg" || $type == 'image/jpeg' || $type == "image/png" || $type == "image/gif" || $type == "application/pdf" || $type == "application/xls"
-            || $type == "application/xlsx" || $type == "application/doc" || $type == "application/docx"
+            $type == "image/jpg" || $type == 'image/jpeg' || $type == "image/png" || $type == "image/gif" || $type == "application/pdf" || $type == "document/xls"
+            || $type == "document/xlsx" || $type == "document/doc" || $type == "document/docx"
         ) {
             if (!file_exists($path)) { // check file not exist in your upload folder path
                 if ($size < 50000000) { // check file size 5MB
