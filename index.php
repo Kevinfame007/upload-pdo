@@ -49,6 +49,7 @@ if (isset($_REQUEST['delete_id'])) {
                         <br>
                         <td>Name</td>
                         <td>เวลาอัพโหลดไฟล์</td>
+                        <td>Download</td>
                         <td>Edit</td>
                         <td>Delete</td>
                     </tr>
@@ -64,6 +65,7 @@ if (isset($_REQUEST['delete_id'])) {
                         <tr>
                             <td><?php echo $row['name']; ?></td>
                             <td><?php echo $row['File_upload_date']; ?></td>
+                            <td><a href="download.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">Download</a></td>
                             <td><a href="edit.php?update_id=<?php echo $row['id']; ?>" class="btn btn-warning">Edit</a></td>
                             <td><a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                         </tr>
